@@ -15,42 +15,45 @@
                 <!-- 계산 결과 -->
                 Output comes here
             </div>
-            <input type="text" placeholder="please put values!" class="calInput">
+            <div class="calInput">
+                <!-- 계산기 입력 -->
+            </div>
             <div class="row">
                 <!-- 1행 -->
-                <span class="col">AC</span>
-                <span class="col">+/-</span>
-                <span class="col">%</span>
-                <span class="col">/</span>
+                <span class="col all-clear">AC</span>
+                <span class="col sign">+/-</span>
+                <span class="col op mod">%</span>
+                <span class="col op divide">/</span>
             </div>
             <div class="row">
                 <!-- 2행 -->
-                <span class="col">7</span>
-                <span class="col">8</span>
-                <span class="col">9</span>
-                <span class="col">x</span>
+                <span class="col num num-7">7</span>
+                <span class="col num num-8">8</span>
+                <span class="col num num-9">9</span>
+                <span class="col op multi">x</span>
             </div>
             <div class="row">
                 <!-- 3행 -->
-                <span class="col">4</span>
-                <span class="col">5</span>
-                <span class="col">6</span>
-                <span class="col">-</span>
+                <span class="col num num-4">4</span>
+                <span class="col num num-5">5</span>
+                <span class="col num num-6">6</span>
+                <span class="col op minus">-</span>
             </div>
             <div class="row">
                 <!-- 4행 -->
-                <span class="col">1</span>
-                <span class="col">2</span>
-                <span class="col">3</span>
-                <span class="col">+</span>
+                <span class="col num num-1">1</span>
+                <span class="col num num-2">2</span>
+                <span class="col num num-3">3</span>
+                <span class="col op plus">+</span>
             </div>
             <div class="row">
                 <!-- 5행 -->
-                <span class="col" style="width:104px">0</span>
-                <span class="col">.</span>
-                <span class="col">=</span>
+                <span class="col num num-0" style="width:100px; text-align: left">0</span>
+                <span class="col dot">.</span>
+                <span class="col result">=</span>
             </div>
         </div>
     </div>
+    <script src="calculator.js"></script>
 </body>
 </html>

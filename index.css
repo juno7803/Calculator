@@ -1,50 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-family: '나눔 고딕',Dotum, 'droid sans fallback','AppleGothic',sans-serif;
+    font-size:20px;
+}
+
 .container{
     display:flex;
     flex-direction: column;
-    border: 3px solid gray;
+    justify-content: flex-end; 
+    align-items: center;
     width:250px;
     height:400px;
-    justify-content: flex-end; 
-    align-items: center;    
+    border: 3px solid gray;
+    background-color: black; 
+    border-radius: 10px;
 }
 .calculator{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom :20px;
+    margin-bottom :12px;
 }
 
 .calInput{
-    border: 1px solid gray;
-    width:212px;
+    width:200px;
     height:30px;
-    margin-bottom : 5px;
+    padding-right:5px;
+    padding-top: 2.5px;
+    margin-bottom: 5px;
+    border: 1px solid gray;
     text-align: right;
     font-size:20px;
+    color:white;
 }
 
 .calOutput{
-    width:212px;
+    width:200px;
     height:50px;
+    padding-top:12px;
+    padding-right:5px;
     margin-bottom:5px;
     border: 1px solid gray;
     font-size:20px;
-    text-align: center;
+    text-align: right;
+    color:white;
 }
 
 .col{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:50px;
-    height:50px;
-    margin: 0 1px;
+    width:47px;
+    height:47px;
+    margin: 3px;
     border-radius: 25px;
     border:1px solid gray;
+    cursor: pointer;
 }
+
 .row{
     margin:1px;
     display:flex;
     text-align: center;
+}
+
+.all-clear, .mod, .sign{
+    background-color: rgb(166,167,167);
+    border-color: rgb(166,167,167);
+}
+
+.divide, .multi, .minus, .plus, .result{
+    background-color: rgb(255,150,0);
+    border-color: rgb(255,150,0);
+    color: white;
+}
+.op:active{
+    background-color: white;
+    border-color:white;
+    color:rgb(255,150,0);
+}
+
+.num, .dot{
+    background-color: rgb(48,48,48);
+    border-color: rgb(48,48,48);
+    color:white;
+}
+.num:active,.dot:active{
+    background-color: rgb(103,103,103);
+    border-color: rgb(103,103,103);
 }
